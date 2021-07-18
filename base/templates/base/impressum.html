@@ -1,0 +1,40 @@
+{% extends "base/base.html" %}
+
+{% block content %}
+    <h1>Impressum</h1>
+    <p>there will be an impressum here</p>
+
+
+    <ul style="list-style-type:None;">
+        <li style="margin-top: 3ex">Tested and optimised on web browsers for Windows10 PCs as well as Android and iOS mobile devices</li>
+        <ul style="list-style-type:None;overflow:hidden;text-align:center">
+            <li style="float:left"><ion-icon name="logo-android" size="large"></ion-icon></li>
+            <li style="float:left"><ion-icon name="logo-apple" size="large"></ion-icon></li>
+            <li style="float:left"><ion-icon name="logo-windows" size="large"></ion-icon></li>
+        </ul>
+        
+        <ul style="list-style-type:None;overflow:hidden;text-align:center">
+            <li style="float:left"><ion-icon name="logo-chrome" size="large"></ion-icon></li>
+            {% comment %} <li style="float:left"><ion-icon name="logo-firefox" size="large"></ion-icon></li> {% endcomment %}
+            <li style="float:left"><ion-icon name="logo-edge" size="large"></ion-icon></li>
+        </ul> 
+
+        <li style="margin-top: 3ex">This site is run on Django</li>
+        <ul style="list-style-type:None;overflow:hidden;text-align:center">
+            <li style="float:left"><ion-icon name="logo-html5" size="large"></ion-icon></li>
+            <li style="float:left"><ion-icon name="logo-css3" size="large"></ion-icon></li>
+            <li style="float:left"><ion-icon name="logo-javascript" size="large"></ion-icon></li>
+            <li style="float:left"><ion-icon name="logo-python" size="large"></ion-icon></li>
+        </ul> 
+        
+        <li style="margin-top: 3ex">Special thanks to</li>
+        <ul>
+            <li><ion-icon name="logo-youtube" style="color:red"></ion-icon> <a href="https://youtube.com/playlist?list=PL-osiE80TeTtoQCKZ03TU5fNfx2UY6U4p">"Python Django Tutorial" (2018)</a> by <a href="http://coreyms.com/">Corey Schafer</a></li>
+            <li><a href="https://mdbootstrap.com/">MDBootstrap.com</a></li>
+            <li><ion-icon name="logo-ionic"></ion-icon> <a href="https://ionic.io/ionicons">ionicons by ionic</a></li>
+            <li><i>Test-Driven Development with Python</i>, 2nd edition, by Harry J.W. Percival (O’Reilly). Copyright 2017 Harry Percival, 978-1-491-95870-4. <a href="https://www.obeythetestinggoat.com/">obeythetestinggoat.com</a></li>
+            <li><i>Lightweight Django</i>, by Julia Elman and Mark Lavin (O’Reilly). Copyright 2015 Julia Elman and Mark Lavin, 978-1-491-94594-0.</li> 
+        </ul>        
+    </ul> 
+
+{% endblock content %}
