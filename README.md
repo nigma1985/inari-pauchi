@@ -1,7 +1,7 @@
 # inari-pauchi
-**Pauchi Kamuy** is the Ainu kamuy (god) of *insanity*.
+[Pauchi Kamuy](https://en.wikipedia.org/wiki/Pauchi_Kamuy) is the Ainu kamuy (god) of *insanity*.
 
-**Inari Ōkami** is the Japanese kami of *foxes*, *fertility*, *rice*, *tea* and *sake*, of *agriculture* and *industry*, of *general prosperity* and *worldly success*, and one of the *principal kami* of Shinto.
+[Inari Ōkami](https://en.wikipedia.org/wiki/Inari_%C5%8Ckami) is the Japanese kami of *foxes*, *fertility*, *rice*, *tea* and *sake*, of *agriculture* and *industry*, of *general prosperity* and *worldly success*, and one of the *principal kami* of Shinto.
 
 -----------------------------
 
