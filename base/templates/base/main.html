@@ -1,0 +1,43 @@
+{% extends "base/base.html" %}
+
+{% block main %}
+    <div class="col-md-8">
+        {% if messages %}
+            {% for message in messages %}
+                <div class="alert alert-{{ message.tags }}">
+                    {{ message }}
+                </div>
+            {% endfor %}   
+        {% endif %}
+        {% block content %}{% endblock %}
+    </div>
+
+    <div class="col-md-4">
+        <div class="content-section">
+            <h3>
+                <ion-icon name="home-outline"></ion-icon>
+                Home
+            </h3>
+            <p class='text-muted'>This is where your story starts.</p>
+            <ul class="list-group">
+                <h4>Basics</h4>
+                <li class="list-group-item list-group-item-light"><a class="nav-link" href="{% url 'about' %}"><ion-icon name="help-outline"></ion-icon> About</a></li>
+                <li class="list-group-item list-group-item-light"><a class="nav-link" href="{% url 'impressum' %}"><ion-icon name="information-outline"></ion-icon> Impressum</a></li>
+                <li class="list-group-item list-group-item-light"><a class="nav-link" href="{% url 'disclaimer' %}"><ion-icon name="search-outline"></ion-icon> Disclaimer</a></li>
+
+                <h4>Identity</h4>
+                {% if user.is_authenticated %}
+                    <li class="list-group-item list-group-item-light"><a class="nav-link" href="{% url 'profile' %}"><ion-icon name="person-outline"></ion-icon> Your Profile</a></li>
+                    {% if user.is_superuser %}
+                        <li class="list-group-item list-group-item-light"><a class="nav-link" href="/admin"><ion-icon name="construct-outline"></ion-icon> Administration</a></li>
+                    {% endif %}
+                    <li class="list-group-item list-group-item-light"><a class="nav-link" href="{% url 'logout' %}"><ion-icon name="log-out-outline"></ion-icon> Logout</a></li>
+                {% else %}
+                    <li class="list-group-item list-group-item-light"><a class="nav-link" href="{% url 'login' %}"><ion-icon name="log-in-outline"></ion-icon> Login</a></li>
+                    <li class="list-group-item list-group-item-light"><a class="nav-link" href="{% url 'register' %}"><ion-icon name="construct-outline"></ion-icon> Register</a></li>
+                {% endif %}
+            </ul>
+            </p>
+        </div>
+    </div>
+{% endblock main %}
