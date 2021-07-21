@@ -131,3 +131,5 @@ dmypy.json
 # other
 *.json
 *.zip
+*.ipynb
+media/profile_pics/
