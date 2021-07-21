@@ -133,3 +133,4 @@ dmypy.json
 *.zip
 *.ipynb
 media/profile_pics/
+**/migrations/
