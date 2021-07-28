@@ -210,7 +210,7 @@ class Bill(Event):
     def __str__(self):
         return f'{self.date.strftime("%Y%m%d")} #{self.id}'
 class Bill_Item_Base(models.Model):
-
+    # TODO: integrate bill items types into one model 
     name = models.CharField(
         max_length=100,
         help_text='Type of Bill Item',
@@ -265,7 +265,8 @@ class Bill_Item_Base(models.Model):
         null=True,
         blank=True,
     )
-
+    # TODO: integrate cleaning meathods
+    
     # def clean(self):
     #     cleaned_data = super().clean()
     #     price = cleaned_data.get("price")
