@@ -29,7 +29,7 @@ with open(os.path.join(BASE_DIR, 'global_config.json')) as config_file:
 SECRET_KEY = config['django']['SECRET_KEY']
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = config['django']['DEBUG']
 
 ALLOWED_HOSTS = []
 
@@ -64,7 +64,7 @@ ROOT_URLCONF = 'main.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [

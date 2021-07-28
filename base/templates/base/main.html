@@ -14,18 +14,18 @@
 
     <div class="col-md-4">
         <div class="content-section">
-            <h3>
+            <h3 class="mt-1">
                 <ion-icon name="home-outline"></ion-icon>
                 Home
             </h3>
             <p class='text-muted'>This is where your story starts.</p>
             <ul class="list-group">
-                <h4>Basics</h4>
+                <h4 class="mt-3">Basics</h4>
                 <li class="list-group-item list-group-item-light"><a class="nav-link" href="{% url 'about' %}">About</a></li>
                 <li class="list-group-item list-group-item-light"><a class="nav-link" href="{% url 'impressum' %}">Impressum</a></li>
                 <li class="list-group-item list-group-item-light"><a class="nav-link" href="{% url 'disclaimer' %}">Disclaimer</a></li>
 
-                <h4>Identity</h4>
+                <h4 class="mt-3">Identity</h4>
                 {% if user.is_authenticated %}
                     <li class="list-group-item list-group-item-light"><a class="nav-link" href="{% url 'profile' %}">Your Profile</a></li>
                     {% if user.is_superuser %}

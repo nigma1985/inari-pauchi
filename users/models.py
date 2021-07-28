@@ -32,6 +32,5 @@ class Profile(models.Model):
             size = min([300, cropped.height, cropped.width]) * form_factor
             output_size = (size, size)
             cropped.thumbnail(output_size)
-
-        # img.save(self.image.path)
+            
         cropped.save(self.image.path)
